@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingTop="5dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/user_layout"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/icon_entry"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/circular_textview"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:text="SA"
+                android:textAllCaps="true"
+                android:textColor="@color/whiteFont"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/name_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                />
+
+
+            <TextView
+                android:id="@+id/email_entry"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/icon_entry"
+                android:padding="5dp"
+                android:textSize="10dp"
+                android:text="contact@startingandroid.com" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Time"
+                android:textSize="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+
+                 />
+
+            <TextView
+                android:id="@+id/tv_latlng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Lat : Lng"
+                android:textSize="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
